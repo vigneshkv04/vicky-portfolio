@@ -200,6 +200,20 @@ section .title::after {
     color: rgb(240, 237, 241);
     background: none;
 }
+#whatsapp{
+    background-color: rgb(0, 156, 78);
+}
+#whatsapp:hover{
+    color: rgb(240, 237, 241);
+    background: none;
+}
+#linkedin{
+    background-color: #0077b5;
+}
+#linkedin:hover{
+    color: rgb(240, 237, 241);
+    background: none;
+}
 /* about section styling */
 .about .title::after {
     content: "who i am";
