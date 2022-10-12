@@ -208,18 +208,18 @@
                 <div class="column right">
                     <div class="text">Message me</div>
                     <h1 id="my-form-status" style="color: red;"></h1>
-                    <form id="my-form" action="https://formspree.io/f/xzbyndzq"
+                    <form id="my-form" action="https://bk-end-portfolio.herokuapp.com/mail"
                     method="POST">
                         <div class="fields">
                             <div class="field name">
-                                <input type="text" placeholder="Name" required>
+                                <input type="text" name="username" placeholder="Name" required>
                             </div>
                             <div class="field email">
-                                <input type="email" name="_replyto" placeholder="your mail ID" required>
+                                <input type="email" name="replyTo" placeholder="your mail ID" required>
                             </div>
                         </div>
                         <div class="field">
-                            <input type="text" placeholder="Subject" required>
+                            <input type="text" name="subject" placeholder="Subject" required>
                         </div>
                         <div class="field textarea">
                             <textarea cols="30" rows="10" name="message" placeholder="Message.." required></textarea>
