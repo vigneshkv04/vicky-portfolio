@@ -28,14 +28,14 @@ $(document).ready(function () {
   });
 
   let typedOne = new Typed(".typing", {
-    strings: ["React.js", "Node.js", "Express.js", "MongoDB"],
+    strings: ["Html5", "CSS", "Bootstrap5", "JavaScript", ],
     typeSpeed: 100,
     backSpeed: 60,
     loop: true,
   });
 
   let typedTwo = new Typed(".typing-2", {
-    strings: ["React.js", "Node.js", "Express.js", "MongoDB"],
+    strings: ["HTML","CSS","Bootsrap5" ,"Javascript" ],
     typeSpeed: 100,
     backSpeed: 60,
     loop: true,
@@ -63,39 +63,4 @@ $(document).ready(function () {
   });
 });
 
-let form = document.getElementById("my-form");
 
-const handleSubmit = async (event) => {
-  event.preventDefault();
-  let status = document.getElementById("my-form-status");
-  let data = new FormData(event.target);
-  const mailId = data.get("replyTo");
-  const message = data.get("message");
-  const username = data.get("username");
-  const subject = data.get("subject");
-  const jsonTemp = {
-    name: username,
-    mailId: mailId,
-    subject: subject,
-    message: message,
-  };
-  let post = JSON.stringify(jsonTemp);
-
-  const url = event.target.action;
-  let xhr = new XMLHttpRequest();
-
-  xhr.open("POST", url, true);
-  xhr.setRequestHeader("Content-type", "application/json; charset=UTF-8");
-  xhr.send(post);
-
-  xhr.onload = function () {
-    console.log("resr", xhr.status);
-    if (xhr.status === 200) {
-      status.innerHTML = "Thanks for your Message I reply to you soon!!";
-      form.reset();
-    } else {
-      status.innerHTML = "Oops! There was a problem submitting your message";
-    }
-  };
-};
-form.addEventListener("submit", handleSubmit);

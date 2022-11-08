@@ -67,7 +67,7 @@ section .title::after {
     font-size: 20px;
     color: rgb(0, 46, 146);
     padding: 0 5px;
-    background: #fff;
+    background: rgb(238, 232, 232);
     transform: translateX(-50%);
 }
 /* navbar styling */
@@ -158,9 +158,9 @@ section .title::after {
 /* home section styling */
 .home {
     display: flex;
-    background-image: url("./images/banner.jpg");
+    background-image:url("../images/BANNER.webp");
     height: 100vh;
-    color: #fff;
+    color: rgb(243, 239, 237);
     min-height: 500px;
     background-size: cover;
     background-attachment: fixed;
@@ -187,7 +187,7 @@ section .title::after {
 }
 .home .home-content a {
     display: inline-block;
-    color: #fff;
+    color: rgb(243, 239, 239);
     font-size: 25px;
     padding: 12px 36px;
     margin-top: 20px;
@@ -320,7 +320,7 @@ section .title::after {
 .skills .skills-content .left a {
     display: inline-block;
     background: #0077b5;
-    color: #fff;
+    color: rgb(241, 238, 238);
     font-size: 18px;
     font-weight: 500;
     padding: 8px 16px;
@@ -437,7 +437,7 @@ section .title::after {
     border-radius: 14px;
 }
 .owl-dot.active, .owl-dot:hover {
-    background: crimson!important;
+    background: rgb(241, 238, 238)!important;
 }
 /* contact section styling */
 .contact .title::after {
